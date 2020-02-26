@@ -7,7 +7,7 @@ const app = express(); // Init express app
 app.use(express.json()); // Set JSON communication
 app.use(cors()); // Open API to public domain
 
-mongoose.connect('mongodb://localhost:27017/nodeapivaccine', {
+mongoose.connect('mongodb+srv://deploy:7432017551@api-tjyy1.gcp.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
